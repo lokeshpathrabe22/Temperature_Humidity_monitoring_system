@@ -1,4 +1,4 @@
-String myAPIkey = "4H8YXW1ZFS1E58G6";  
+String myAPIkey = "";  
 
 #include <SoftwareSerial.h>
 //#include <LiquidCrystal.h>
@@ -36,7 +36,7 @@ void setup()
    while(check_connection==0)
   {
     Serial.print(".");
-  ESP8266.print("AT+CWJAP=\"pathrabe\",\"kishori@308\"\r\n");
+  ESP8266.print("AT+CWJAP=\"USERNAME\",\"PASSWORD\"\r\n");
   ESP8266.setTimeout(5000);
  if(ESP8266.find("WIFI CONNECTED\r\n")==1)
  {
